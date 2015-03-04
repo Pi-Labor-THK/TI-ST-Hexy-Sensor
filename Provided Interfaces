@@ -1,0 +1,69 @@
+@author: Fatih Aydin, Andreas Hantschel, Sven Meuser, Ilias Papathanasiou, Daniel Schulin
+@subject: Provided interfaces
+
+#Funktion: Führt eine Messung durch
+#Rückgabe: Distanz zu dem nächsten Gegenstand
+def GetDistance():
+    return
+
+#Funktion: Führt einen 140° Scan durch
+#Rückgabe: Array mit Entfernungsdaten
+def Fullscan():
+    return
+
+#Funktion: Soll einen Radarbild ausgeben
+def Radarscan():
+    return
+
+###Gyrosensor###
+    
+
+#Funktion: Soll prüfen ob Hexy gerade steht
+#Rückgabe: true = Hexy steht grade
+def isHorizontal():
+    return
+
+#Funktion: Soll die aktuelle Höhe angeben (gemessen NN)
+#Rückgabe: Höhe
+def Level():
+    return
+
+#Funktion: Gibt an ob und wie schnell sich der Hexy bewegt
+#Rückgabe: Geschwindigkeit
+def Speed():
+    return
+
+#Funktion: Gibt die Blickrichtung des Hexy zurück
+#Rückgabe: Richtung
+def Heading():
+    return
+
+###Kamera###
+
+
+#Funktion: Soll Kanten in einer bestimmten Reichweite erkennen
+#Rückgabe: true = in der Entfernung befindet sich eine Kante
+def isEdge(distance):
+    return
+
+#Funktion: Soll prüfen ob die Kamera einsatzbereit ist
+#Rückgabe: true = Kamera ist blockiert ( zu dunkel/hell etc.)
+def camBlocked():
+    return
+
+#Funktion: Soll Hindernisse erkennen
+#Rückgabe: True = Hindernis befindet sich in der angegebenen Distanz
+def isObstacle():
+    return
+
+#Funktion: Gibt die Breite eines Gegenstandes in einer bestimmten Entfernung wieder
+#Rückgabe: Breite des Gegestandes / 0 wenn kein Gegenstand gefunden / -1 wenn 
+#der Gegenstad den Rand des Bildes überschreitet
+def wideOfObject(distance):
+    return
+
+#Funktion: Gibt die Länge einer Kante wieder
+#Rückgabe: Länge der Kante / 0 wenn keine Kante gefunden / -1 wenn
+#die Kante den Rand des Bildes überschreitet
+def wideOfEdge(distance):
+    return
